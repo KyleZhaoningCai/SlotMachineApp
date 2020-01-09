@@ -12,6 +12,7 @@
 		6FE62F1E23C6B00A009F02B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE62F1C23C6B00A009F02B0 /* Main.storyboard */; };
 		6FE62F2023C6B00C009F02B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FE62F1F23C6B00C009F02B0 /* Assets.xcassets */; };
 		6FE62F2323C6B00C009F02B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE62F2123C6B00C009F02B0 /* LaunchScreen.storyboard */; };
+		6FE62F2C23C6BCE2009F02B0 /* SlotMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE62F2B23C6BCE2009F02B0 /* SlotMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6FE62F1F23C6B00C009F02B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FE62F2223C6B00C009F02B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FE62F2423C6B00C009F02B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FE62F2B23C6BCE2009F02B0 /* SlotMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		6FE62F1723C6B00A009F02B0 /* SlotMachineApp */ = {
 			isa = PBXGroup;
 			children = (
+				6FE62F2A23C6BCBC009F02B0 /* classes */,
 				6FE62F1823C6B00A009F02B0 /* AppDelegate.swift */,
 				6FE62F1A23C6B00A009F02B0 /* ViewController.swift */,
 				6FE62F1C23C6B00A009F02B0 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				6FE62F2423C6B00C009F02B0 /* Info.plist */,
 			);
 			path = SlotMachineApp;
+			sourceTree = "<group>";
+		};
+		6FE62F2A23C6BCBC009F02B0 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				6FE62F2B23C6BCE2009F02B0 /* SlotMachine.swift */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				6FE62F1B23C6B00A009F02B0 /* ViewController.swift in Sources */,
 				6FE62F1923C6B00A009F02B0 /* AppDelegate.swift in Sources */,
+				6FE62F2C23C6BCE2009F02B0 /* SlotMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
