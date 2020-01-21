@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F9D7FA223D77630003A41BB /* SHPinscher-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9D7FA123D77630003A41BB /* SHPinscher-Regular.otf */; };
 		6FE62F1923C6B00A009F02B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE62F1823C6B00A009F02B0 /* AppDelegate.swift */; };
 		6FE62F1B23C6B00A009F02B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE62F1A23C6B00A009F02B0 /* ViewController.swift */; };
 		6FE62F1E23C6B00A009F02B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE62F1C23C6B00A009F02B0 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F9D7FA123D77630003A41BB /* SHPinscher-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SHPinscher-Regular.otf"; sourceTree = "<group>"; };
 		6FE62F1523C6B00A009F02B0 /* SlotMachineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlotMachineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE62F1823C6B00A009F02B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FE62F1A23C6B00A009F02B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		6FE62F1723C6B00A009F02B0 /* SlotMachineApp */ = {
 			isa = PBXGroup;
 			children = (
+				6F9D7FA123D77630003A41BB /* SHPinscher-Regular.otf */,
 				6FE62F2A23C6BCBC009F02B0 /* classes */,
 				6FE62F1823C6B00A009F02B0 /* AppDelegate.swift */,
 				6FE62F1A23C6B00A009F02B0 /* ViewController.swift */,
@@ -136,6 +139,7 @@
 				6FE62F2323C6B00C009F02B0 /* LaunchScreen.storyboard in Resources */,
 				6FE62F2023C6B00C009F02B0 /* Assets.xcassets in Resources */,
 				6FE62F1E23C6B00A009F02B0 /* Main.storyboard in Resources */,
+				6F9D7FA223D77630003A41BB /* SHPinscher-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

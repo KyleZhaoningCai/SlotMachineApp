@@ -37,11 +37,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var slotThreeDitto: UIImageView!
     @IBOutlet weak var slotThreeGengar: UIImageView!
     
+    @IBOutlet weak var slotOneSpin: UIImageView!
+    @IBOutlet weak var slotTwoSpin: UIImageView!
+    @IBOutlet weak var slotThreeSpin: UIImageView!
     
+    @IBOutlet weak var winLabel: UILabel!
+    @IBOutlet weak var jackpotLabel: UILabel!
     
     @IBOutlet weak var slotBackground: UIImageView!
     @IBOutlet weak var slotBottomBackground: UIImageView!
     @IBOutlet weak var spinButton: UIButton!
+    
+    @IBOutlet weak var winLossLabel: UILabel!
+    @IBOutlet weak var jackpotAmountLabel: UILabel!
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var playerMoneyLabel: UILabel!
+    @IBOutlet weak var playerBetTextField: UITextField!
+    @IBOutlet weak var spinStartButton: UIButton!
+    @IBOutlet weak var spinStopButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
+    
     
     let slotMachine = SlotMachine()
     
@@ -53,7 +68,9 @@ class ViewController: UIViewController {
     var slotOneImageViewArray = [UIImageView]()
     var slotTwoImageViewArray = [UIImageView]()
     var slotThreeImageViewArray = [UIImageView]()
+    var spinImageViewArray = [UIImageView]()
     var slotResults = [Int]()
+    var initialSpin = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,23 +82,47 @@ class ViewController: UIViewController {
         self.slotOneImageViewArray = [self.slotOneBlank, self.slotOneBulbasaur, self.slotOneCharmander, self.slotOneSqurtle, self.slotOneDitto, self.slotOneGengar, self.slotOnePikachu, self.slotOneLucky]
         self.slotTwoImageViewArray = [self.slotTwoBlank, self.slotTwoBulbasaur, self.slotTwoCharmander, self.slotTwoSqurtle, self.slotTwoDitto, self.slotTwoGengar, self.slotTwoPikachu, self.slotTwoLucky]
         self.slotThreeImageViewArray = [self.slotThreeBlank, self.slotThreeBulbasaur, self.slotThreeCharmander, self.slotThreeSqurtle, self.slotThreeDitto, self.slotThreeGengar, self.slotThreePikachu, self.slotThreeLucky]
+        self.spinImageViewArray = [self.slotOneSpin, self.slotTwoSpin, self.slotThreeSpin]
         
     }
 
+    @IBAction func resetGame(_ sender: UIButton) {
+    }
+    
+    @IBAction func spinStart(_ sender: UIButton) {
+        if (spinStop == 0){
+            spinStop = 1
+            spinStartButton.isHidden = true
+            spinStopButton.isHidden = false
+            beginSpinning(imageViewArray: slotOneImageViewArray, column: 0)
+            beginSpinning(imageViewArray: slotTwoImageViewArray, column: 1)
+            beginSpinning(imageViewArray: slotThreeImageViewArray, column: 2)
+            if (self.initialSpin){
+                spinAwaySpinIcons()
+            }
+        }
+    }
     @IBAction func spinStop(_ sender: UIButton) {
-        if (spinStop == 2){
-            spinStop = 0
+        if (spinStop == 4){
+            spinStop = -3
+            spinStartButton.isHidden = false
+            spinStopButton.isHidden = true
             slotResults = self.slotMachine.spinSlotMachine()
             print(slotResults[0])
             print(slotResults[1])
             print(slotResults[2])
         }
-        else if (spinStop == 0){
-            spinStop = 1
-            beginSpinning(imageViewArray: slotOneImageViewArray, column: 0)
-            beginSpinning(imageViewArray: slotTwoImageViewArray, column: 1)
-            beginSpinning(imageViewArray: slotThreeImageViewArray, column: 2)
-        }
+    }
+    
+    func spinAwaySpinIcons(){
+        self.initialSpin = false
+        UIView.animate(withDuration: 0.4, delay: 0.0, options: [.curveEaseIn], animations: {
+            for i in 0 ..< self.spinImageViewArray.count {
+                var imageFrame = self.spinImageViewArray[i].frame
+                imageFrame.origin.y += self.slotGap * 3
+                self.spinImageViewArray[i].frame = imageFrame
+            }
+        })
     }
     
     func beginSpinning(imageViewArray: Array<UIImageView>, column: Int) {
@@ -92,7 +133,7 @@ class ViewController: UIViewController {
                 imageViewArray[i].frame = imageFrame
             }
         }, completion: { finish in
-            self.spinStop = 2
+            self.spinStop += 1
             self.keepSpinning(imageViewArray: imageViewArray, column: column)
         })
     }
@@ -113,7 +154,7 @@ class ViewController: UIViewController {
                 imageViewArray[i].frame = imageFrame
             }
         }, completion: { finish in
-            if (self.spinStop == 0 && abs(self.resultYPosition - imageViewArray[self.slotResults[column]].frame.origin.y - self.slotGap) < 1 ){
+            if (self.spinStop < 0 && abs(self.resultYPosition - imageViewArray[self.slotResults[column]].frame.origin.y - self.slotGap) < 1 ){
                 self.stopSpinning(imageViewArray: imageViewArray)
             }
             else{
@@ -146,6 +187,7 @@ class ViewController: UIViewController {
                     break
                 }
             }
+            self.spinStop += 1
         })
     }
     
