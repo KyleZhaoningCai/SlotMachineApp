@@ -18,34 +18,149 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="FAH-LW-K6i">
+                                <rect key="frame" x="74" y="46" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squrtle" translatesAutoresizingMaskIntoConstraints="NO" id="Os3-Tv-rrW">
+                                <rect key="frame" x="74" y="396" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gengar" translatesAutoresizingMaskIntoConstraints="NO" id="WmR-tD-psv">
+                                <rect key="frame" x="74" y="536" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blank" translatesAutoresizingMaskIntoConstraints="NO" id="rKe-Cj-Mhb">
+                                <rect key="frame" x="74" y="186" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bulbasaur" translatesAutoresizingMaskIntoConstraints="NO" id="9VG-3g-xXY">
+                                <rect key="frame" x="74" y="256" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="charmander" translatesAutoresizingMaskIntoConstraints="NO" id="6fX-wZ-Vks">
+                                <rect key="frame" x="74" y="326" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lucky" translatesAutoresizingMaskIntoConstraints="NO" id="59V-b2-mfE">
+                                <rect key="frame" x="74" y="116" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ditto" translatesAutoresizingMaskIntoConstraints="NO" id="lDZ-Dy-pob">
+                                <rect key="frame" x="74" y="466" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="ILl-hH-KRx">
+                                <rect key="frame" x="169" y="46" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lucky" translatesAutoresizingMaskIntoConstraints="NO" id="n5X-hZ-Xzl">
+                                <rect key="frame" x="169" y="116" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blank" translatesAutoresizingMaskIntoConstraints="NO" id="86B-Tr-PlU">
+                                <rect key="frame" x="169" y="186" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bulbasaur" translatesAutoresizingMaskIntoConstraints="NO" id="WJd-Ux-7Xv">
+                                <rect key="frame" x="169" y="256" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="charmander" translatesAutoresizingMaskIntoConstraints="NO" id="YQv-oa-CX1">
+                                <rect key="frame" x="169" y="326" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squrtle" translatesAutoresizingMaskIntoConstraints="NO" id="yng-Ui-j45">
+                                <rect key="frame" x="169" y="396" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ditto" translatesAutoresizingMaskIntoConstraints="NO" id="gPy-73-qw6">
+                                <rect key="frame" x="169" y="466" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gengar" translatesAutoresizingMaskIntoConstraints="NO" id="h3b-9d-xqc">
+                                <rect key="frame" x="169" y="536" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="cfq-52-DHl">
+                                <rect key="frame" x="263" y="46" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lucky" translatesAutoresizingMaskIntoConstraints="NO" id="xdf-LR-z4t">
+                                <rect key="frame" x="263" y="116" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blank" translatesAutoresizingMaskIntoConstraints="NO" id="GqO-Sd-9gF">
+                                <rect key="frame" x="263" y="186" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bulbasaur" translatesAutoresizingMaskIntoConstraints="NO" id="Exx-gG-G4T">
+                                <rect key="frame" x="263" y="256" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="charmander" translatesAutoresizingMaskIntoConstraints="NO" id="NaQ-ns-m7a">
+                                <rect key="frame" x="263" y="326" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squrtle" translatesAutoresizingMaskIntoConstraints="NO" id="M3U-1L-3co">
+                                <rect key="frame" x="263" y="396" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ditto" translatesAutoresizingMaskIntoConstraints="NO" id="5Q6-g0-s5c">
+                                <rect key="frame" x="263" y="466" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gengar" translatesAutoresizingMaskIntoConstraints="NO" id="BXh-zC-Fu9">
+                                <rect key="frame" x="263" y="536" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-trimmed" translatesAutoresizingMaskIntoConstraints="NO" id="FuZ-3m-WiP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="342"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-bottom" translatesAutoresizingMaskIntoConstraints="NO" id="d5A-01-fST">
+                                <rect key="frame" x="0.0" y="386" width="414" height="510"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICM-Vu-ibb">
-                                <rect key="frame" x="184" y="502" width="46" height="30"/>
+                                <rect key="frame" x="184" y="648" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="spinStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIO-jj-pjR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rKe-Cj-Mhb">
-                                <rect key="frame" x="20" y="209" width="112" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uUh-Xw-AYA">
-                                <rect key="frame" x="151" y="209" width="112" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BbI-yG-X5M">
-                                <rect key="frame" x="282" y="209" width="112" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="slotOneImageView" destination="rKe-Cj-Mhb" id="PkT-IX-QbH"/>
-                        <outlet property="slotThreeImageView" destination="BbI-yG-X5M" id="LbX-rm-aRP"/>
-                        <outlet property="slotTwoImageView" destination="uUh-Xw-AYA" id="Aip-aj-9WD"/>
+                        <outlet property="slotBackground" destination="FuZ-3m-WiP" id="8ge-ys-IoH"/>
+                        <outlet property="slotBottomBackground" destination="d5A-01-fST" id="RHQ-Ib-2f3"/>
+                        <outlet property="slotOneBlank" destination="rKe-Cj-Mhb" id="Wb4-AN-frh"/>
+                        <outlet property="slotOneBulbasaur" destination="9VG-3g-xXY" id="IZm-b5-caI"/>
+                        <outlet property="slotOneCharmander" destination="6fX-wZ-Vks" id="5NQ-Z2-aES"/>
+                        <outlet property="slotOneDitto" destination="lDZ-Dy-pob" id="W4o-Cs-Rk1"/>
+                        <outlet property="slotOneGengar" destination="WmR-tD-psv" id="hKi-1k-Gwh"/>
+                        <outlet property="slotOneLucky" destination="59V-b2-mfE" id="G1l-jz-yCC"/>
+                        <outlet property="slotOnePikachu" destination="FAH-LW-K6i" id="ysU-hu-OlM"/>
+                        <outlet property="slotOneSqurtle" destination="Os3-Tv-rrW" id="dgI-gN-AFD"/>
+                        <outlet property="slotThreeBlank" destination="GqO-Sd-9gF" id="bjB-cj-hrD"/>
+                        <outlet property="slotThreeBulbasaur" destination="Exx-gG-G4T" id="5iM-5L-j5X"/>
+                        <outlet property="slotThreeCharmander" destination="NaQ-ns-m7a" id="NvN-BE-ydX"/>
+                        <outlet property="slotThreeDitto" destination="5Q6-g0-s5c" id="f3i-Eb-cj4"/>
+                        <outlet property="slotThreeGengar" destination="BXh-zC-Fu9" id="YQJ-Do-KOR"/>
+                        <outlet property="slotThreeLucky" destination="xdf-LR-z4t" id="Skb-oB-Sy5"/>
+                        <outlet property="slotThreePikachu" destination="cfq-52-DHl" id="HyR-TU-gTY"/>
+                        <outlet property="slotThreeSqurtle" destination="M3U-1L-3co" id="2As-bR-UXL"/>
+                        <outlet property="slotTwoBlank" destination="86B-Tr-PlU" id="Nr0-Sw-ytV"/>
+                        <outlet property="slotTwoBulbasaur" destination="WJd-Ux-7Xv" id="1Dv-3g-LbV"/>
+                        <outlet property="slotTwoCharmander" destination="YQv-oa-CX1" id="MSX-4C-kdI"/>
+                        <outlet property="slotTwoDitto" destination="gPy-73-qw6" id="Aiw-Qf-6ec"/>
+                        <outlet property="slotTwoGengar" destination="h3b-9d-xqc" id="l3w-Ls-RJf"/>
+                        <outlet property="slotTwoLucky" destination="n5X-hZ-Xzl" id="BUl-Dv-TUd"/>
+                        <outlet property="slotTwoPikachu" destination="ILl-hH-KRx" id="b0c-p3-7Yt"/>
+                        <outlet property="slotTwoSqurtle" destination="yng-Ui-j45" id="b7K-R1-kv7"/>
                         <outlet property="spinButton" destination="ICM-Vu-ibb" id="eGz-AI-COd"/>
                     </connections>
                 </viewController>
@@ -54,4 +169,16 @@
             <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background-bottom" width="349" height="288"/>
+        <image name="background-trimmed" width="349" height="288"/>
+        <image name="blank" width="256" height="256"/>
+        <image name="bulbasaur" width="256" height="256"/>
+        <image name="charmander" width="256" height="256"/>
+        <image name="ditto" width="256" height="256"/>
+        <image name="gengar" width="256" height="256"/>
+        <image name="lucky" width="256" height="256"/>
+        <image name="pikachu" width="256" height="256"/>
+        <image name="squrtle" width="256" height="256"/>
+    </resources>
 </document>
