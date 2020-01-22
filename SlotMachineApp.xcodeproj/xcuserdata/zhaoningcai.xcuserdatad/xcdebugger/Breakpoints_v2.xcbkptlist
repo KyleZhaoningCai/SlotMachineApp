@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SlotMachineApp/ViewController.swift"
+            timestampString = "601368801.752754"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlotMachineApp.ViewController.slotMachine.getter : SlotMachineApp.SlotMachine"
+                  moduleName = "SlotMachineApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaoningcai/Documents/ios-development/SlotMachineApp/SlotMachineApp/ViewController.swift"
+                  timestampString = "601326190.5313261"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlotMachineApp.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SlotMachineApp.ViewController"
+                  moduleName = "SlotMachineApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaoningcai/Documents/ios-development/SlotMachineApp/SlotMachineApp/ViewController.swift"
+                  timestampString = "601326190.534004"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "3866">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlotMachineApp.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SlotMachineApp.ViewController&gt;"
+                  moduleName = "SlotMachineApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaoningcai/Documents/ios-development/SlotMachineApp/SlotMachineApp/ViewController.swift"
+                  timestampString = "601326190.536586"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "3780">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

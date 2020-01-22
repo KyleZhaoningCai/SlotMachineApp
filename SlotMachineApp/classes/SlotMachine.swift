@@ -1,16 +1,23 @@
-//
-//  SlotMachine.swift
-//  SlotMachineApp
-//
-//  Created by Zhaoning Cai on 2020-01-08.
-//  Copyright © 2020 CentennialCollege. All rights reserved.
-//
+/*
+ File Name: SlotMachine.swift
+ Author: Zhaoning Cai
+ Student ID: 300817368
+ Date: Jan 22, 2020
+ App Description: Slot Machine App
+ Version Information: v1.0
+ */
 
 import Foundation
 
+// SlotMachine class that holds the logic of the game
 class SlotMachine {
         
     // Properties
+    
+    // Each value in the _slotWeights array represents the weight of the corresponding
+    // icon in _slotIcons array. The weights are used for calculating the odds of an icon
+    // showing up at the end of a spin.
+    // The odds are the same as the web version
     private let _slotWeights: Array<Int> = [415, 154, 138, 123, 77, 46, 31, 15]
     private let _slotIcons: Array<String> = ["blank", "bulbasaur", "charmander", "squrtle", "ditto", "gengar", "pikachu", "lucky"]
     private var _jackpot = 5000
@@ -19,18 +26,12 @@ class SlotMachine {
     private var _playerPrize = -1
     private var _playerJackpot = 0
     
-    
-    var slotIcons: Array<String>{
-        get {
-            return _slotIcons
-        }
-    }
-    
     // Initializer
     init (){
         
     }
     
+    // Resets all values to default, and return an integer array of the values
     func resetSlotMachine() ->Array<Int> {
         self._jackpot = 5000
         self._playerMoney = 1000
@@ -40,13 +41,18 @@ class SlotMachine {
         return [0, 0, 0, self._playerBet, self._playerPrize, self._playerJackpot, self._playerMoney, self._jackpot]
     }
     
+    // Decides the outcome of a spin.
     func spinSlotMachine(playerBet: String) -> Array<Int> {
-        _playerPrize = 0
+        _playerPrize = 0 // Resets player prize money for this spin
         _playerBet = Int(playerBet)!
-        _playerMoney -= _playerBet
+        _playerMoney -= _playerBet // Reduce player's money by bet amount
+        
+        // Get the integer outcome of each slot
         let slot1: Int = rollByWeight()
         let slot2: Int = rollByWeight()
         let slot3: Int = rollByWeight()
+        
+        // Create a dictionary with the icons as keys and numbers of appearance as values
         var resultDic: [String: Int] = [:]
         for i in 0 ..< _slotIcons.count{
             resultDic[_slotIcons[i]] = 0
@@ -55,6 +61,8 @@ class SlotMachine {
         resultDic[_slotIcons[slot2]] = (resultDic[_slotIcons[slot2]] ?? 0) + 1
         resultDic[_slotIcons[slot3]] = (resultDic[_slotIcons[slot3]] ?? 0) + 1
         
+        // Check if the player wins and what the player won
+        // Winning condition replicated from the web version
         if (resultDic["blank"] == 0){
             if (resultDic["bulbasaur"] == 3){
                 _playerPrize = _playerBet * 10
@@ -104,6 +112,9 @@ class SlotMachine {
             else{
                 _playerPrize = _playerBet
             }
+            
+            // As long as the player wins, roll for a potential jackpot
+            // Jackpot odd is the same as the web version
             let randomNumber: Int = Int.random(in: 1 ... 51)
             if (randomNumber == 1){
                 _playerJackpot = _jackpot
@@ -118,9 +129,12 @@ class SlotMachine {
         else{
             _playerPrize = 0
         }
+        
+        // Return an integer array of values at the end of this spin
         return [slot1, slot2, slot3, _playerBet, _playerPrize, _playerJackpot, _playerMoney, _jackpot]
     }
     
+    // Roll an index based on the given weight
     private func rollByWeight() -> Int{
         let total = _slotWeights.reduce(0, +)
         var randomNumber: Int = Int.random(in: 1 ... total)
@@ -132,6 +146,6 @@ class SlotMachine {
                 return index
             }
         }
-        return -1
+        return -1 // This line shouldn't be reached without error
     }
 }

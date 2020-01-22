@@ -1,10 +1,11 @@
-//
-//  AppDelegate.swift
-//  SlotMachineApp
-//
-//  Created by Zhaoning Cai on 2020-01-08.
-//  Copyright © 2020 CentennialCollege. All rights reserved.
-//
+/*
+ File Name: AppDelegate.swift
+ Author: Zhaoning Cai
+ Student ID: 300817368
+ Date: Jan 22, 2020
+ App Description: Slot Machine App
+ Version Information: v1.0
+ */
 
 import UIKit
 
