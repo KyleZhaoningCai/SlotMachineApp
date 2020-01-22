@@ -15,8 +15,8 @@ class SlotMachine {
     private let _slotIcons: Array<String> = ["blank", "bulbasaur", "charmander", "squrtle", "ditto", "gengar", "pikachu", "lucky"]
     private var _jackpot = 5000
     private var _playerMoney = 1000
-    private var _playerBet = 0
-    private var _playerPrize = 0
+    private var _playerBet = -1
+    private var _playerPrize = -1
     private var _playerJackpot = 0
     
     
@@ -31,9 +31,19 @@ class SlotMachine {
         
     }
     
+    func resetSlotMachine() ->Array<Int> {
+        self._jackpot = 5000
+        self._playerMoney = 1000
+        self._playerBet = -1
+        self._playerPrize = -1
+        self._playerJackpot = 0
+        return [0, 0, 0, self._playerBet, self._playerPrize, self._playerJackpot, self._playerMoney, self._jackpot]
+    }
     
-    
-    func spinSlotMachine() -> Array<Int> {
+    func spinSlotMachine(playerBet: String) -> Array<Int> {
+        _playerPrize = 0
+        _playerBet = Int(playerBet)!
+        _playerMoney -= _playerBet
         let slot1: Int = rollByWeight()
         let slot2: Int = rollByWeight()
         let slot3: Int = rollByWeight()
@@ -98,10 +108,12 @@ class SlotMachine {
             if (randomNumber == 1){
                 _playerJackpot = _jackpot
                 _jackpot = 1000
+                _playerMoney += _playerJackpot
             }
             else{
                 _playerJackpot = 0
             }
+            _playerMoney += _playerPrize
         }
         else{
             _playerPrize = 0

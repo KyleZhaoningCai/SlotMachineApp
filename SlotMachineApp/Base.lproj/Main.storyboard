@@ -154,15 +154,15 @@
                                 <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AF-iM-x2H">
-                                <rect key="frame" x="241" y="65" width="43" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AF-iM-x2H">
+                                <rect key="frame" x="228" y="65" width="71" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SHPinscher-Regular" family="SH Pinscher" pointSize="26"/>
                                 <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgY-iS-GN0">
-                                <rect key="frame" x="149" y="53" width="0.0" height="0.0"/>
+                                <rect key="frame" x="115" y="53" width="71" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SHPinscher-Regular" family="SH Pinscher" pointSize="28"/>
                                 <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -185,13 +185,13 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="black" translatesAutoresizingMaskIntoConstraints="NO" id="hgm-1l-iTX">
-                                <rect key="frame" x="46" y="430" width="323" height="58"/>
+                                <rect key="frame" x="46" y="430" width="323" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnr-Rb-W3h">
-                                <rect key="frame" x="57" y="440" width="303" height="39"/>
+                                <rect key="frame" x="55" y="435" width="303" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SHPinscher-Regular" family="SH Pinscher" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="SHPinscher-Regular" family="SH Pinscher" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -218,7 +218,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CLICK BELOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVf-jF-bt4">
-                                <rect key="frame" x="239" y="556" width="126" height="36"/>
+                                <rect key="frame" x="236" y="556" width="126" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SHPinscher-Regular" family="SH Pinscher" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -231,7 +231,7 @@
                                 <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhU-uJ-7WT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhU-uJ-7WT">
                                 <rect key="frame" x="57" y="585" width="116" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SHPinscher-Regular" family="SH Pinscher" pointSize="43"/>
@@ -245,19 +245,32 @@
                                 <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1000" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UFV-ou-H1E">
-                                <rect key="frame" x="254" y="620" width="97" height="41"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UFV-ou-H1E">
+                                <rect key="frame" x="245" y="620" width="108" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="SHPinscher-Regular" family="SH Pinscher" pointSize="43"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="verifyBet:" destination="BYZ-38-t0r" eventType="editingChanged" id="64f-fJ-KJx"/>
+                                </connections>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start-disabled" translatesAutoresizingMaskIntoConstraints="NO" id="Mle-iB-f4y">
+                                <rect key="frame" x="229" y="740" width="140" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reset-disabled" translatesAutoresizingMaskIntoConstraints="NO" id="ozT-UF-bUh">
+                                <rect key="frame" x="46" y="740" width="140" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="jackpotAmountLabel" destination="5AF-iM-x2H" id="EIE-2X-GxW"/>
+                        <outlet property="disabledResetButton" destination="ozT-UF-bUh" id="J6B-hq-7mO"/>
+                        <outlet property="disabledSpinStartButton" destination="Mle-iB-f4y" id="Oht-90-8wL"/>
+                        <outlet property="jackpotLabel" destination="5AF-iM-x2H" id="k8E-jf-BBr"/>
                         <outlet property="messageLabel" destination="hnr-Rb-W3h" id="4VT-o6-km1"/>
                         <outlet property="playerBetTextField" destination="UFV-ou-H1E" id="VcT-wG-kUx"/>
                         <outlet property="playerMoneyLabel" destination="uhU-uJ-7WT" id="kNe-H3-ZoX"/>
@@ -294,7 +307,6 @@
                         <outlet property="spinButton" destination="ICM-Vu-ibb" id="eGz-AI-COd"/>
                         <outlet property="spinStartButton" destination="r6x-MQ-tHC" id="LTe-QC-rgr"/>
                         <outlet property="spinStopButton" destination="ICM-Vu-ibb" id="npr-L5-40S"/>
-                        <outlet property="winLabel" destination="OgY-iS-GN0" id="RQ0-D5-3C6"/>
                         <outlet property="winLossLabel" destination="OgY-iS-GN0" id="vQe-8d-8zu"/>
                     </connections>
                 </viewController>
@@ -315,9 +327,11 @@
         <image name="lucky" width="256" height="256"/>
         <image name="pikachu" width="256" height="256"/>
         <image name="reset" width="1155" height="453"/>
+        <image name="reset-disabled" width="1155" height="453"/>
         <image name="spin" width="128" height="128"/>
         <image name="squrtle" width="256" height="256"/>
         <image name="start" width="329" height="130"/>
+        <image name="start-disabled" width="329" height="130"/>
         <image name="stop" width="330" height="130"/>
     </resources>
 </document>
