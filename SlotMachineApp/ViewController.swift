@@ -86,7 +86,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func verifyBet(_ sender: UITextField) {
-        self.verifyBetInput(inputString: sender)
+        if (Int(sender.text ?? "") != nil && Int(sender.text ?? "")! > 0 && Int(sender.text ?? "")! <= Int(self.playerMoneyLabel.text ?? "0")!){
+            self.changeButtonStatus(disable: true, start: false, stop: true, reset: false, bet: true)
+        }
+        else{
+            self.changeButtonStatus(disable: false, start: true, stop: true, reset: false, bet: true)
+        }    }
+    
+    @IBAction func exitGame(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Are You Leaving?", message: "You will lose your progress.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {action in
+            exit(0)
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true)
     }
     
     @IBAction func resetGame(_ sender: UIButton) {
@@ -98,34 +112,27 @@ class ViewController: UIViewController {
     
     @IBAction func spinStart(_ sender: UIButton) {
         if (self.spinStop == 0){
-            self.verifyBetInput(inputString: self.playerBetTextField)
-            if (!self.spinStartButton.isHidden){
-                self.spinStop = 1
-                self.changeButtonStatus(disable: true, start: true, stop: false, reset: true, bet: false)
-                self.beginSpinning(imageViewArray: slotOneImageViewArray, column: 0)
-                self.beginSpinning(imageViewArray: slotTwoImageViewArray, column: 1)
-                self.beginSpinning(imageViewArray: slotThreeImageViewArray, column: 2)
-                if (self.initialSpin){
-                    self.spinAwaySpinIcons()
-                }
+            self.spinStop = 1
+            self.changeButtonStatus(disable: true, start: true, stop: false, reset: true, bet: false)
+            self.beginSpinning(imageViewArray: slotOneImageViewArray, column: 0)
+            self.beginSpinning(imageViewArray: slotTwoImageViewArray, column: 1)
+            self.beginSpinning(imageViewArray: slotThreeImageViewArray, column: 2)
+            if (self.initialSpin){
+                self.spinAwaySpinIcons()
             }
         }
     }
     @IBAction func spinStop(_ sender: UIButton) {
         if (spinStop == 4){
             spinStop = -3
-            self.changeButtonStatus(disable: true, start: false, stop: true, reset: false, bet: true)
             self.slotResults = self.slotMachine.spinSlotMachine(playerBet: self.playerBetTextField.text!)
+            if (self.slotResults[3] > self.slotResults[6]){
+                self.changeButtonStatus(disable: false, start: true, stop: true, reset: false, bet: true)
+            }
+            else{
+                self.changeButtonStatus(disable: true, start: false, stop: true, reset: false, bet: true)
+            }
             self.updateLabels(resultArray: self.slotResults)
-        }
-    }
-    
-    func verifyBetInput(inputString: UITextField){
-        if (Int(inputString.text ?? "") != nil && Int(inputString.text ?? "")! > 0 && Int(inputString.text ?? "")! <= Int(self.playerMoneyLabel.text ?? "0")!){
-            self.changeButtonStatus(disable: true, start: false, stop: true, reset: false, bet: true)
-        }
-        else{
-            self.changeButtonStatus(disable: false, start: true, stop: true, reset: false, bet: true)
         }
     }
     

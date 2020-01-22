@@ -140,7 +140,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICM-Vu-ibb">
-                                <rect key="frame" x="229" y="740" width="140" height="57"/>
+                                <rect key="frame" x="228" y="717" width="140" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="stop"/>
                                 <connections>
@@ -169,7 +169,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6x-MQ-tHC">
-                                <rect key="frame" x="229" y="740" width="140" height="57"/>
+                                <rect key="frame" x="228" y="717" width="140" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="start"/>
                                 <connections>
@@ -177,7 +177,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arl-oI-u7l">
-                                <rect key="frame" x="46" y="740" width="140" height="57"/>
+                                <rect key="frame" x="45" y="717" width="140" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="reset"/>
                                 <connections>
@@ -256,13 +256,21 @@
                                 </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start-disabled" translatesAutoresizingMaskIntoConstraints="NO" id="Mle-iB-f4y">
-                                <rect key="frame" x="229" y="740" width="140" height="57"/>
+                                <rect key="frame" x="228" y="717" width="140" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reset-disabled" translatesAutoresizingMaskIntoConstraints="NO" id="ozT-UF-bUh">
-                                <rect key="frame" x="46" y="740" width="140" height="57"/>
+                                <rect key="frame" x="45" y="717" width="140" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLd-fB-IK0">
+                                <rect key="frame" x="137" y="794" width="140" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="exit"/>
+                                <connections>
+                                    <action selector="exitGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ahg-sC-Ps2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -323,6 +331,7 @@
         <image name="bulbasaur" width="256" height="256"/>
         <image name="charmander" width="256" height="256"/>
         <image name="ditto" width="256" height="256"/>
+        <image name="exit" width="330" height="130"/>
         <image name="gengar" width="256" height="256"/>
         <image name="lucky" width="256" height="256"/>
         <image name="pikachu" width="256" height="256"/>
